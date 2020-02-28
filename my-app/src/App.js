@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Desk>
-        <HomeView />
+        <HomeView scale={0.35} />
       </Desk>
     </div>
   );

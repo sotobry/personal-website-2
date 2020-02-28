@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import itemsData from '../data/itemsData';
+// import itemsData from '../data/itemsData';
 
 
-const resume = itemsData.filter(item => item.name === 'resume')[0];
+// const resume = itemsData.filter(item => item.name === 'resume')[0];
 
 const ItemContainer = styled.div`
 	position: absolute;
@@ -37,8 +37,8 @@ const Img = styled.img`
 `;
 
 const DeskItem = props => {
-	const { scale } = props;
-	const { name, hoverText, imgURL, mainDimension, imgWidthItemWidthRatio, imgHeightWidthRatio, top, left, rotation, to } = resume;
+	const { scale, data } = props;
+	const { name, hoverText, imgURL, mainDimension, imgWidthItemWidthRatio, imgHeightWidthRatio, top, left, rotation, to } = data;
 
 	const width = `${scale * mainDimension * imgWidthItemWidthRatio}in`;
 	const height = `${scale * mainDimension * imgWidthItemWidthRatio * imgHeightWidthRatio}in`;

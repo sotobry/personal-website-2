@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Desk } from './components/Desk';
-import { DeskItem } from './components/DeskItem'
+import { HomeView } from './views/HomeView';
+
 function App() {
   return (
     <div className="App">
       <Desk>
-        <DeskItem scale={0.35} />
+        <HomeView />
       </Desk>
     </div>
   );

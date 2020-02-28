@@ -1,9 +1,9 @@
-// import resumeURL from './images/resume.png';
-// import macbookProURL from './images/macbookpro.png';
-// import iPhone8URL from './images/iphones/iphone03.png';
-// import journalURL from './images/journals/journal01.png';
-// import bookURL from './images/books03.png';
-// import newspapersURL from './images/newspaper02.png';
+import resumeURL from '../images/resume.png';
+import macbookProURL from '../images/macbookPro.png';
+import iPhone8URL from '../images/iPhone8.png';
+import journalURL from '../images/journal.png';
+import booksURL from '../images/books.png';
+import newspapersURL from '../images/newspapers.png';
 
 const deskItems = [{
 	name: 'resume',
@@ -30,7 +30,7 @@ const deskItems = [{
 }, {
 	name: "books",
 	hoverText: "Education",
-	imgURL: bookURL,
+	imgURL: booksURL,
 	mainDimension: 6,
 	imgWidthItemWidthRatio: 1.657692308,
 	imgHeightWidthRatio: 488 / 431,
@@ -40,7 +40,7 @@ const deskItems = [{
 	to: 'education'
 },
 {
-	name: `newspaper`,
+	name: `newspapers`,
 	hoverText: `Coming Soon`,
 	imgURL: newspapersURL,
 	destination: '#',

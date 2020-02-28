@@ -1,16 +1,21 @@
 .App {
 	position: relative;
+	
 	width: 100vw;
 	height: 100vh;
 }
 .desk, .desk-x, .desk-y {
 	position: absolute;
+
 	width: inherit;
 	height: inherit;
+
 	background-image: url('./images/desk.jpg');
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	z-index: -1;
 }
 .desk-x {
 	background-repeat: repeat-x;

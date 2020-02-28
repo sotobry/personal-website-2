@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import itemsData from '../data/itemsData';
-
-
-// const resume = itemsData.filter(item => item.name === 'resume')[0];
+import { Link } from 'react-router-dom';
 
 const ItemContainer = styled.div`
 	--text-opacity: 0;
@@ -26,15 +23,15 @@ const ItemContainer = styled.div`
 			transform: scale(1.1) rotate(${({ rotation }) => rotation}deg);
 		}
 `;
-const Link = styled.a`
+const A = styled.a`
 	width: inherit;
 	height: inherit;
 	position: inherit;
 `;
 const Img = styled.img`
 	width: inherit;
-	height: inherit;
-	position: inherit;
+	/* height: inherit; */
+	/* position: inherit; */
 `;
 const H1 = styled.h1`  
   font-size: 2.25rem;
@@ -55,17 +52,29 @@ const DeskItem = props => {
 
 	const width = `${scale * mainDimension * imgWidthItemWidthRatio}in`;
 	const height = `${scale * mainDimension * imgWidthItemWidthRatio * imgHeightWidthRatio}in`;
-
+	console.log(to.indexOf('http') !== -1);
 	return (
 		<ItemContainer width={width} height={height} top={top} left={left} rotation={rotation}>
-			<Link>
-				<Img
-					src={imgURL}
-					alt=''
-				/>
-			</Link>
+			{to.indexOf('http') !== -1 ?
+				<A
+					href={to}
+					target='_blank'
+					rel="noopener noreferrer">
+					<Img
+						src={imgURL}
+						alt=''
+					/>
+				</A> :
+				<Link to={to} style={{ width: 'inherit', height: 'inherit', position: 'inherit' }}>
+					<Img
+						src={imgURL}
+						alt=''
+					/>
+				</Link>
+			}
+
 			<H1 className={name} style={{ transform: `rotate(${-rotation}deg)` }}>{hoverText}</H1>
-		</ItemContainer>
+		</ItemContainer >
 	);
 };
 

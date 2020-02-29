@@ -7,6 +7,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
 	<Router>
-		<App scale={0.35} />
+		<App />
 	</Router>, document.getElementById('root'));
 

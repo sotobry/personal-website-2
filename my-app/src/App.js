@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import { Desk } from './components/Desk';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import { HomeView } from './views/HomeView';
+import { EducationView } from './views/EducationView';
 
 const App = () => {
   return (
@@ -14,12 +15,10 @@ const App = () => {
             <HomeView scale={0.35} />
           </Route>
           <Route exact path='/education'>
-            <Link to='/'>GO BACK</Link>
-            <h2>Potatos</h2>
+            <EducationView />
           </Route>
           <Route exact path='/projects'>
-            <Link to='/'>GO BACK</Link>
-            <h2>Potatos</h2>
+
           </Route>
         </Switch>
       </Desk>

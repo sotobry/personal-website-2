@@ -30,6 +30,14 @@ const ItemContainer = styled.div`
 			justify-content: center;
 			text-decoration: none;
 		}
+		
+		.resume {
+			filter: sepia(0.2);
+		}
+
+		.journal {
+			filter: brightness(0.9);
+		}
 `;
 
 const Img = styled.img`
@@ -75,6 +83,7 @@ const DeskItem = props => {
 				</a> :
 				<Link to={to}>
 					<Img
+						className={name}
 						src={imgURL}
 						alt=''
 					/>

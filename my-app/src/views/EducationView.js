@@ -11,13 +11,12 @@ const Paper = styled.div`
 	bottom: 0;
 	left: 0;
 	right: 0;
-	margin auto;
+	margin: auto;
 	background-color: white;
-`;
+	`;
 
 
-const EducationView = props => {
-
+const EducationView = () => {
 	return (
 		<>
 			<Link to='/'>GO BACK</Link>

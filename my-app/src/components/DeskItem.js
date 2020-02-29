@@ -38,6 +38,10 @@ const ItemContainer = styled.div`
 		.journal {
 			filter: brightness(0.9);
 		}
+
+		.newspapers + h1 {
+			width: 30%;
+		}
 `;
 
 const Img = styled.img`

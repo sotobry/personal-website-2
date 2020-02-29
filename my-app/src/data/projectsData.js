@@ -5,9 +5,25 @@ import iPhone8Plus_H from '../images/LASToyota/iPhone8Plus_H.png';
 import iPad_V from '../images/LASToyota/iPad_V.png';
 import iPad_H from '../images/LASToyota/iPad_H.png';
 
-const LASTAppleDevices = [iPhoneSE_V, iPhoneSE_H, iPhone8Plus_V, iPhone8Plus_H, iPad_V, iPad_H];
+const LASTAppleDevicesData = [
+	{
+		mainDimension: 2.31,
+		imgURL_V: iPhoneSE_V,
+		imgURL_H: iPhoneSE_H
+	},
+	{
+		mainDimension: 3.06,
+		imgURL_V: iPhone8Plus_V,
+		imgURL_H: iPhone8Plus_H
+	},
+	{
+		mainDimension: 6.8,
+		imgURL_V: iPad_V,
+		imgURL_H: iPad_H
+	}
+];
 
 
-export { LASTAppleDevices };
+export { LASTAppleDevicesData };
 
 

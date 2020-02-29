@@ -19,7 +19,8 @@ const ItemContainer = styled.div`
 			--text-opacity: 1;
 			transform: scale(1.1) rotate(${({ rotation }) => rotation}deg);
 		}
-		.linky {
+
+		a, Link {
 			width: inherit;
 			height: inherit;
 			position: inherit;
@@ -35,6 +36,7 @@ const Img = styled.img`
 	width: inherit;
 	position: inherit;
 `;
+
 const H1 = styled.h1`  
   font-size: 2.25rem;
   color: white;
@@ -59,7 +61,6 @@ const DeskItem = props => {
 		<ItemContainer width={width} height={height} top={top} left={left} rotation={rotation}>
 			{to.indexOf('http') !== -1 ?
 				<a
-					className='linky'
 					href={to}
 					target='_blank'
 					rel="noopener noreferrer"
@@ -72,7 +73,7 @@ const DeskItem = props => {
 					/>
 					<H1 style={{ transform: `rotate(${-rotation}deg)` }}>{hoverText}</H1>
 				</a> :
-				<Link className='linky' to={to}>
+				<Link to={to}>
 					<Img
 						src={imgURL}
 						alt=''

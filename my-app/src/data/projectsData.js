@@ -4,6 +4,7 @@ import iPhone8Plus_V from '../images/LASToyota/iPhone8Plus_V.png';
 import iPhone8Plus_H from '../images/LASToyota/iPhone8Plus_H.png';
 import iPad_V from '../images/LASToyota/iPad_V.png';
 import iPad_H from '../images/LASToyota/iPad_H.png';
+import graphPaper from '../images/graphPaper.png'
 
 const LASTAppleDevicesData = [
 	{
@@ -23,7 +24,12 @@ const LASTAppleDevicesData = [
 	}
 ];
 
+const graphPaperData = {
+	width: 8.27,
+	height: 11.69,
+	imgURL: graphPaper
+};
 
-export { LASTAppleDevicesData };
+export { LASTAppleDevicesData, graphPaperData };
 
 

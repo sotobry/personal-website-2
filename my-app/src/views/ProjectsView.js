@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { LASTAppleDevicesData, LASToyotaData } from '../data/projectsData';
 import styled from 'styled-components';
-import { zoom } from '../zoom';
+// import { zoom } from '../zoom';
 import { GraphPaper } from '../components/GraphPaper';
 
 const DeviceGroups = styled.div`
@@ -53,7 +53,25 @@ const ProjectsView = (props) => {
 
 	return (
 		<>
-			<Link to='/'>GO BACK</Link>
+			<Link to='/'
+				style={{
+					fontSize: '3rem',
+					// padding: '4rem',
+					backgroundColor: 'white',
+					position: 'absolute',
+					top: 25,
+					left: 25,
+					display: 'flex',
+					width: 50,
+					height: 50,
+					justifyContent: 'center',
+					alignItems: 'center',
+					textDecoration: 'none',
+					borderRadius: '50%',
+					padding: '2.2rem',
+					color: 'black'
+				}}
+			><i class="fas fa-long-arrow-alt-left"></i></Link>
 			<GraphPaper
 				scale={0.4}
 				data={LASToyotaData} />

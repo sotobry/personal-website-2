@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LASTAppleDevicesData, graphPaperData } from '../data/projectsData';
+import { LASTAppleDevicesData, graphPaperData, LASToyotaData } from '../data/projectsData';
 import styled from 'styled-components';
-import { zoom } from '../zoom'
+import { zoom } from '../zoom';
+import { GraphPaperTest } from '../components/GraphPaper';
 
 const DeviceGroups = styled.div`
 	width: 100vw;
@@ -67,11 +68,12 @@ const ProjectsView = (props) => {
 	return (
 		<>
 			<Link to='/'>GO BACK</Link>
-			<GraphPaper
+			{/* <GraphPaper
 				scale={scale}
 				data={graphPaperData}
 				onClick={(e) => zoom.to({ element: e.target })}
-			></GraphPaper>
+			></GraphPaper> */}
+			<GraphPaperTest scale={1} data={LASToyotaData}></GraphPaperTest>
 			<DeviceGroups>
 				{LASTAppleDeviceGroupComponents}
 			</DeviceGroups>

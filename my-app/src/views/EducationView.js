@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { EducationData } from '../data/educationData';
 import { Paper } from '../styled-components/EducationViewSC';
+import { GoBackButton } from '../components/GoBackButton';
+
 
 const EducationView = () => {
 	const education = EducationData.map(subject =>
@@ -18,25 +19,7 @@ const EducationView = () => {
 	);
 	return (
 		<>
-			<Link to='/'
-				style={{
-					fontSize: '3rem',
-					// padding: '4rem',
-					backgroundColor: 'white',
-					position: 'absolute',
-					top: 25,
-					left: 25,
-					display: 'flex',
-					width: 50,
-					height: 50,
-					justifyContent: 'center',
-					alignItems: 'center',
-					textDecoration: 'none',
-					borderRadius: '50%',
-					padding: '2.2rem',
-					color: 'black'
-				}}
-			><i class="fas fa-long-arrow-alt-left"></i></Link>
+			<GoBackButton />
 			<Paper scale={0.7}>
 				<ul>
 					{education}

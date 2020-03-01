@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { LASTAppleDevicesData, LASToyotaData } from '../data/projectsData';
 import styled from 'styled-components';
-// import { zoom } from '../zoom';
 import { GraphPaper } from '../components/GraphPaper';
+import { GoBackButton } from '../components/GoBackButton';
 
 const DeviceGroups = styled.div`
 	width: 100vw;
@@ -46,32 +45,14 @@ const ImgH = styled.img`
 const ProjectsView = (props) => {
 	const { scale } = props;
 	const LASTAppleDeviceGroupComponents = LASTAppleDevicesData.map(group =>
-		<DeviceGroup>
+		<DeviceGroup >
 			<ImgV scale={scale} src={group.imgURL_V} mainDimension={group.mainDimension} alt='' />
 			<ImgH scale={scale} src={group.imgURL_H} mainDimension={group.mainDimension} alt='' />
 		</DeviceGroup>);
 
 	return (
 		<>
-			<Link to='/'
-				style={{
-					fontSize: '3rem',
-					// padding: '4rem',
-					backgroundColor: 'white',
-					position: 'absolute',
-					top: 25,
-					left: 25,
-					display: 'flex',
-					width: 50,
-					height: 50,
-					justifyContent: 'center',
-					alignItems: 'center',
-					textDecoration: 'none',
-					borderRadius: '50%',
-					padding: '2.2rem',
-					color: 'black'
-				}}
-			><i class="fas fa-long-arrow-alt-left"></i></Link>
+			<GoBackButton />
 			<GraphPaper
 				scale={0.4}
 				data={LASToyotaData} />

@@ -34,13 +34,13 @@ const LASToyotaData = {
 	title: 'LAS Toyota Dealership',
 	tldr: 'Created content for, designed, developed, and deployed mobile-first responsive website for Toyota dealership struggling to meet sales targets.',
 	tech: 'JS, CSS, HTML',
-	situation: 'Dealership is struggling to meet sales targets, and owner decides to invest into marketing. They decide to build a website.',
-	endUsersInfo: 'The majority of the dealership customers are from the lower-middle class. In Puerto Rico, it is uncommon for the lower-middle class to own their own personal computer. Their main access to the web is through their smart phones. Therefore, a mobile-first responsive approach was taken.',
+	situation: 'Dealership is struggling to meet sales targets, and owner decides to invest into building a website.',
+	endUsersInfo: 'According to the client, most customers are from the lower-middle class. In Puerto Rico, it is uncommon for the lower-middle class to own their own computers. Their main access to the web is through their smart phones. Therefore, a mobile-first responsive approach was taken.',
 	highlightSection: [
 		{
 			header: 'Development and Design',
 			highlights: [
-				'Utilized mathematical concepts like regression analysis alongside with JS to optimize the design responsiveness of the website enhancing its aesthetics not just for a few viewports ranges, but all of them making it look flawless on every device.',
+				'Utilized mathematical concepts alongside with JS to optimize the website\'s design responsiveness enhancing its aesthetics not just for a few viewports ranges, but for all of them making it look flawless on every device.',
 				'Debugged and tested website in different viewports, devices, and browsers.',
 				'Currently creating the 4th iteration of the website built in React with improved performance, UI/UX, new features, and a more complex layout to guide users through more detailed product information.'
 			]

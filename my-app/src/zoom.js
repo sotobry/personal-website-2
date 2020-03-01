@@ -261,3 +261,5 @@ var zoom = (function() {
 	}
 
 })();
+
+export { zoom };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { LASTAppleDevicesData, graphPaperData } from '../data/projectsData';
 import styled from 'styled-components';
+import { zoom } from '../zoom'
 
 const DeviceGroups = styled.div`
 	width: 100vw;
@@ -69,6 +70,7 @@ const ProjectsView = (props) => {
 			<GraphPaper
 				scale={scale}
 				data={graphPaperData}
+				onClick={(e) => zoom.to({ element: e.target })}
 			></GraphPaper>
 			<DeviceGroups>
 				{LASTAppleDeviceGroupComponents}

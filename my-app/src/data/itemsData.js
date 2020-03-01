@@ -1,9 +1,9 @@
-import resumeURL from '../images/resume.png';
-import macbookProURL from '../images/macbookPro.png';
-import iPhone8URL from '../images/iPhone8.png';
-import journalURL from '../images/journal.png';
-import booksURL from '../images/books.png';
-import newspapersURL from '../images/newspapers.png';
+import resumeURL from '../images-sm/resume.png';
+import macbookProURL from '../images-sm/macbookPro.png';
+import iPhone8URL from '../images-sm/iPhone8.png';
+import journalURL from '../images-sm/journal.png';
+import booksURL from '../images-sm/books.png';
+import newspapersURL from '../images-sm/newspapers.png';
 
 const deskItems = [
 	{

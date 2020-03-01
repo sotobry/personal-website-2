@@ -1,10 +1,10 @@
-import iPhoneSE_V from '../images/LASToyota/iPhoneSE_V.png';
-import iPhoneSE_H from '../images/LASToyota/iPhoneSE_H.png';
-import iPhone8Plus_V from '../images/LASToyota/iPhone8Plus_V.png';
-import iPhone8Plus_H from '../images/LASToyota/iPhone8Plus_H.png';
-import iPad_V from '../images/LASToyota/iPad_V.png';
-import iPad_H from '../images/LASToyota/iPad_H.png';
-import graphPaper from '../images/graphPaper.png'
+import iPhoneSE_V from '../images-sm/LASToyota/iPhoneSE_V.png';
+import iPhoneSE_H from '../images-sm/LASToyota/iPhoneSE_H.png';
+import iPhone8Plus_V from '../images-sm/LASToyota/iPhone8Plus_V.png';
+import iPhone8Plus_H from '../images-sm/LASToyota/iPhone8Plus_H.png';
+import iPad_V from '../images-sm/LASToyota/iPad_V.png';
+import iPad_H from '../images-sm/LASToyota/iPad_H.png';
+import graphPaper from '../images-sm/graphPaper.png'
 
 const LASTAppleDevicesData = [
 	{

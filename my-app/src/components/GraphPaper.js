@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import graphPaperURL from '../images/graphPaper.png';
+import graphPaperURL from '../images-sm/graphPaper.png';
 import { zoom } from '../zoom';
 
 const GraphPaperSC = styled.div`

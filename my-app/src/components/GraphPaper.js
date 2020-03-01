@@ -55,7 +55,7 @@ li {
 const GraphPaper = props => {
 	const { data: { title, tldr, tech, situation, endUsersInfo, highlightSection }, scale } = props;
 	return (
-		<GraphPaperSC scale={scale} onClick={(e) => zoom.to({ element: e.target })}>
+		<GraphPaperSC className='GraphPaper' scale={scale} onClick={() => zoom.to({ element: document.querySelector('.GraphPaper') })}>
 			<a href='https://lastoyota.com' target='_blank' rel="noopener noreferrer"><h1>{title}</h1></a>
 
 			<p><b>TL;DR</b>: {tldr}</p>
@@ -69,18 +69,20 @@ const GraphPaper = props => {
 			<p>{endUsersInfo}</p>
 
 			<h2>Highlights</h2>
-			{highlightSection.map(
-				section =>
-					<>
-						<h3>{section.header}</h3>
-						<ul>
-							{section.highlights.map(highlight =>
-								<li>{highlight}</li>
-							)}
-						</ul>
-					</>
-			)}
-		</GraphPaperSC>
+			{
+				highlightSection.map(
+					section =>
+						<>
+							<h3>{section.header}</h3>
+							<ul>
+								{section.highlights.map(highlight =>
+									<li>{highlight}</li>
+								)}
+							</ul>
+						</>
+				)
+			}
+		</GraphPaperSC >
 	);
 }
 

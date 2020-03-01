@@ -30,6 +30,38 @@ const graphPaperData = {
 	imgURL: graphPaper
 };
 
-export { LASTAppleDevicesData, graphPaperData };
+const LASToyotaData = {
+	title: 'LAS Toyota Dealership',
+	tldr: 'Created content for, designed, developed, and deployed mobile-first responsive website for Toyota dealership struggling to meet sales targets.',
+	tech: 'JS, CSS, HTML',
+	situation: 'Dealership is struggling to meet sales targets, and owner decides to invest into marketing. They decide to build a website.',
+	endUsersInfo: 'The majority of the dealership customers are from the lower-middle class. In Puerto Rico, it is uncommon for the lower-middle class to own their own personal computer. Their main access to the web is through their smart phones. Therefore, a mobile-first responsive approach was taken.',
+	highlightSection: [
+		{
+			header: 'Development and Design',
+			highlights: [
+				'Utilized mathematical concepts like regression analysis alongside with JS to optimize the design responsiveness of the website enhancing its aesthetics not just for a few viewports ranges, but all of them making it look flawless on every device.',
+				'Debugged and tested website in different viewports, devices, and browsers.',
+				'Currently creating the 4th iteration of the website built in React with improved performance, UI/UX, new features, and a more complex layout to guide users through more detailed product information.'
+			]
+		},
+		{
+			header: 'Communication',
+			highlights: [
+				'Documented code with detailed explanations and maintenance instructions, recorded and prioritized future features and bug fixes, and tracked the project in a Git repository.',
+				'Communicated with the client directly with updates on the progress of the website, and discussed the implications of the different design options along with the pros and cons associated with them.',
+				'Actively asked for clarification on unclear project requirements and for feedback on design concepts.'
+			]
+		},
+		{
+			header: 'Other',
+			highlights: [
+				'Researched and analyzed the competition deriving from my findings an initial website concept that exceeds theirs.'
+			]
+		}
+	]
+};
+
+export { LASTAppleDevicesData, graphPaperData, LASToyotaData };
 
 

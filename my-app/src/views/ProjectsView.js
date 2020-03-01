@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LASTAppleDevicesData } from '../data/projectsData';
+import { LASTAppleDevicesData, graphPaperData } from '../data/projectsData';
 import styled from 'styled-components';
 
 const DeviceGroups = styled.div`
@@ -35,10 +35,24 @@ const DeviceGroup = styled.div`
 
 const ImgV = styled.img`
 	width: ${({ mainDimension, scale }) => scale * mainDimension}in;
-`;
+	`;
 
 const ImgH = styled.img`
 	height: ${({ mainDimension, scale }) => scale * mainDimension}in;
+	`;
+
+const GraphPaper = styled.div`
+	width: ${({ data: { width }, scale }) => scale * width}in;
+	height: ${ ({ data: { height }, scale }) => scale * height}in;
+
+	background-image: url(${({ data: { imgURL } }) => imgURL});
+	background-size: contain;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 150px;
 `;
 
 const ProjectsView = (props) => {
@@ -52,6 +66,10 @@ const ProjectsView = (props) => {
 	return (
 		<>
 			<Link to='/'>GO BACK</Link>
+			<GraphPaper
+				scale={scale}
+				data={graphPaperData}
+			></GraphPaper>
 			<DeviceGroups>
 				{LASTAppleDeviceGroupComponents}
 			</DeviceGroups>

@@ -21,6 +21,9 @@ const App = () => {
           <Route exact path='/projects'>
             <ProjectsView scale={0.4} />
           </Route>
+          <Route exact path='/blog'>
+            <h1>This is the blog section.</h1>
+          </Route>
         </Switch>
       </Desk>
     </div>

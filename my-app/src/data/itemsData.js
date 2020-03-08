@@ -66,7 +66,7 @@ const deskItems = [
 		top: 400,
 		left: 975,
 		rotation: -10,
-		to: '/'
+		to: '/blog'
 	},
 	{
 		name: "iPhone8",

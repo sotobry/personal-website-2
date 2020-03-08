@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import { HomeView } from './views/HomeView';
 import { EducationView } from './views/EducationView';
 import { ProjectsView } from './views/ProjectsView';
+import { BlogView } from './views/BlogView';
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
             <ProjectsView scale={0.4} />
           </Route>
           <Route exact path='/blog'>
-            <h1>This is the blog section.</h1>
+            <BlogView />
           </Route>
         </Switch>
       </Desk>

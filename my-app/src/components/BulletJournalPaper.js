@@ -28,6 +28,12 @@ const DotSC = styled.div`
 	grid-column: 0 -1;
 `;
 
+const Text = styled.div`
+	position: absolute;
+	font-size: 20px;
+	font-family: monospace;
+`;
+
 const Row = () => <>
 	<DotSC /><DotSC /><DotSC /><DotSC /><DotSC />
 	<DotSC /><DotSC /><DotSC /><DotSC /><DotSC />
@@ -35,7 +41,8 @@ const Row = () => <>
 	<DotSC /><DotSC /><DotSC /><DotSC /><DotSC />
 	<DotSC /><DotSC /><DotSC /><DotSC /><DotSC />
 	<DotSC /><DotSC />
-</>
+</>;
+
 const BulletJournalPaper = () =>
 	<PaperSC scale={0.8}>
 		<Row /><Row /><Row /><Row /><Row />
@@ -49,6 +56,11 @@ const BulletJournalPaper = () =>
 		<Row /><Row /><Row /><Row /><Row />
 		<Row /><Row /><Row /><Row /><Row />
 		<Row /><Row /><Row />
+
+		<Text>
+			<p>This is a test. Cuentan de un sabio que un dia, tan pobre y misero estaba. Que solo se sustentaba, de unas hojas que el comia. Meie Script
+			</p>
+		</Text>
 	</PaperSC >;
 
 export { BulletJournalPaper }

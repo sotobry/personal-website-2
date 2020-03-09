@@ -12,7 +12,7 @@ const BlogView = () => {
 			<div className='journal'>
 				<div className='leftPage'><h2>Left Page</h2></div>
 				<div className='rightPage'><h2>Right Page</h2></div>
-				<BulletJournalPaper />
+				<BulletJournalPaper>Testing Testing 1 2 3</BulletJournalPaper>
 			</div>
 		</>
 	);

@@ -30,15 +30,23 @@ const DotSC = styled.div`
 
 const Text = styled.div`
 	position: absolute;
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Meie Script';
-	margin: 20px 15px;
-	padding: 0px 15px;
-	width: 50%;
-	height: 95%;
+	padding: 20px 30px;
+	/* width: 50%; */
+	height: 100%;
+	column-fill: auto;
+	column-gap: 50px;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: black;
+	/* height: 95%; */
 	color: #0000d8;
-	/* text-shadow: #0000dd 0px 1px; */
-	border-right: black solid 1px;;
+	hyphens: auto;
+	text-shadow: #0000dd 0px 0.5px;
+	line-height: 1;
+	/* border-right: black solid 1px;; */
+	column-count: 2;
 `;
 
 const Row = () => <>
@@ -65,7 +73,7 @@ const BulletJournalPaper = props =>
 		<Row /><Row /><Row />
 
 		<Text>
-			<p>This is a test. Cuentan de un sabio que un dia, tan pobre y misero estaba. Que solo se sustentaba, de unas hojas que el comia. Meie Script
+			<p>
 				{props.children}
 			</p>
 		</Text>

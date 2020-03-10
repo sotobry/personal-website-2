@@ -10,15 +10,18 @@ const PaperSC = styled.div`
 	/* width: 100%; */
 	grid-template-columns: repeat(27, 1fr);
 	grid-template-rows: repeat(39, 1fr);
-		padding: 20px 15px;
+	padding: 20px 15px;
+	
+
 
 	`;
 const LeftPaperSC = styled(PaperSC)`
 	border-radius: 20px 0 0 20px;
-
+	/* background-image: linear-gradient(to left, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%); */
 `;
 const RightPaperSC = styled(PaperSC)`
 	border-radius: 0 20px 20px 0;
+	background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
 `;
 const DotSC = styled.div`
 	width: 1px;
@@ -43,7 +46,7 @@ const Text = styled.div`
 
 	column-count: 2;
 	column-fill: auto;
-	column-gap: 10px;
+	column-gap: 15px;
 	column-rule-style: solid;
 	column-rule-width: 1px;
 	column-rule-color: black;

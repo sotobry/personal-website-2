@@ -13,7 +13,13 @@ const PaperSC = styled.div`
 		padding: 20px 15px;
 
 	`;
+const LeftPaperSC = styled(PaperSC)`
+	border-radius: 20px 0 0 20px;
 
+`;
+const RightPaperSC = styled(PaperSC)`
+	border-radius: 0 20px 20px 0;
+`;
 const DotSC = styled.div`
 	width: 1px;
 	height: 1px;
@@ -30,14 +36,14 @@ const Text = styled.div`
 
 	font-size: 16px;
 	font-family: 'Meie Script';
-	padding: 20px 30px;
+	padding: 20px 30px 25px 30px;
 	height: 100%;
 	width: inherit;
 	height: inherit;
 
 	column-count: 2;
 	column-fill: auto;
-	column-gap: 50px;
+	column-gap: 10px;
 	column-rule-style: solid;
 	column-rule-width: 1px;
 	column-rule-color: black;
@@ -58,8 +64,8 @@ const Row = () => <>
 	<DotSC /><DotSC />
 </>;
 
-const BulletJournalPaper = props =>
-	<PaperSC scale={0.8}>
+const LeftPaper = props =>
+	<LeftPaperSC scale={0.8}>
 		<Row /><Row /><Row /><Row /><Row />
 		<Row /><Row /><Row /><Row /><Row />
 		<Row /><Row /><Row />
@@ -77,6 +83,24 @@ const BulletJournalPaper = props =>
 				{props.children}
 			</p>
 		</Text>
-	</PaperSC >;
+	</LeftPaperSC >;
+const RightPaper = props =>
+	<RightPaperSC scale={0.8}>
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row />
 
-export { BulletJournalPaper }
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row />
+
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row /><Row /><Row />
+		<Row /><Row /><Row />
+
+		<Text>
+			{props.children}
+		</Text>
+	</RightPaperSC >;
+
+export { LeftPaper, RightPaper }

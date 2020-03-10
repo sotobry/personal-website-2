@@ -17,6 +17,7 @@ const GoBackButtonSC = styled(Link)`
 	border-radius: 50%;
 	padding: 2.2rem;
 	color: black;
+	z-index: 100;
 `;
 
 const GoBackButton = () =>

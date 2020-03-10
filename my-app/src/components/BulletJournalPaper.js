@@ -48,8 +48,8 @@ const Text = styled.div`
 	column-fill: auto;
 	column-gap: 15px;
 	column-rule-style: solid;
-	column-rule-width: 1px;
-	column-rule-color: black;
+	column-rule-width: 2px;
+	/* column-rule-color: black; */
 
 	color: #0000d8;
 	hyphens: auto;

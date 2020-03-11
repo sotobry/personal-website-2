@@ -10,17 +10,17 @@ const PageSC = styled.div`
 	grid-template-rows: 1fr 10fr; 
 	padding: 20px 15px;
 
-	border-radius: ${ ({ leftPageOrRightPage }) => {
-		if (leftPageOrRightPage === 'leftPage')
+	border-radius: ${ ({ side }) => {
+		if (side === 'left')
 			return '20px 0 0 20px';
-		else if (leftPageOrRightPage === 'rightPage')
+		else if (side === 'right')
 			return '0 20px 20px 0';
 	}};
 
-	background-image: ${ ({ leftPageOrRightPage }) => {
-		if (leftPageOrRightPage === 'leftPage')
+	background-image: ${ ({ side }) => {
+		if (side === 'left')
 			return 'none';
-		else if (leftPageOrRightPage === 'rightPage')
+		else if (side === 'right')
 			return 'linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%)';
 	}};
 
@@ -51,7 +51,7 @@ grid-column: 0 -1;
 const Page = props => {
 	// const [side] = useState('left');
 	return (
-		<PageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>{props.children}</PageSC>
+		<PageSC scale={0.8} side={props.side}>{props.children}</PageSC>
 	);
 };
 
@@ -63,7 +63,7 @@ const Dots = () => {
 const PageNum = styled.p`
 	position: absolute;
 	left: ${({ side }) => {
-		return side === 'leftPage' ? 0 : 'init';
+		return side === 'left' ? 0 : 'init';
 	}};
 	right: 0;
 	bottom: 0;
@@ -74,9 +74,9 @@ const PageNum = styled.p`
 `;
 const DottedPage = props => {
 	return (
-		<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
+		<DottedPageSC scale={0.8} side={props.side}>
 			<Dots />
-			<PageNum side={props.leftPageOrRightPage}>{props.pageNum}</PageNum>
+			<PageNum side={props.side}>{props.pageNum}</PageNum>
 		</DottedPageSC>
 	);
 };
@@ -135,7 +135,7 @@ const ContentPageSC = styled(PageSC)`
 	}
 `;
 
-const ContentPage = props => <ContentPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
+const ContentPage = props => <ContentPageSC scale={0.8} side={props.side}>
 	<h1>Inhalt - Content - Contenu</h1>
 	<div className='contentTable'>
 		<div className='tableHeader'>Seiten<br />Pages</div>

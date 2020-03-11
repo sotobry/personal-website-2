@@ -16,13 +16,13 @@ const JournalSC = styled.div`
 `;
 
 const Journal = () => {
-	const [pages] = useState([<DottedPage leftPageOrRightPage='leftPage' pageNum={2} />, <DottedPage leftPageOrRightPage='rightPage' pageNum={3} />])
+	const [pages] = useState([<DottedPage side='left' pageNum={2} />, <DottedPage side='right' pageNum={3} />])
 	return (
 		<JournalSC>
-			{/* <Page leftPageOrRightPage='leftPage' /> */}
-			{/* <DottedPage leftPageOrRightPage='leftPage' /> */}
-			{/* <ContentPage leftPageOrRightPage='rightPage' /> */}
-			{/* <DottedPage leftPageOrRightPage='rightPage' /> */}
+			{/* <Page side='left' /> */}
+			{/* <DottedPage side='left' /> */}
+			{/* <ContentPage side='right' /> */}
+			{/* <DottedPage side='right' /> */}
 			{pages}
 		</JournalSC>
 	);

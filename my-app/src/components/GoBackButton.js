@@ -22,6 +22,6 @@ const GoBackButtonSC = styled(Link)`
 
 const GoBackButton = () =>
 	<GoBackButtonSC to='/'>
-		<i class="fas fa-long-arrow-alt-left"></i>
+		<i className="fas fa-long-arrow-alt-left"></i>
 	</GoBackButtonSC>
 export { GoBackButton }

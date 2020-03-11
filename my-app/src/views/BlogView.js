@@ -2,6 +2,8 @@ import React from 'react';
 import { GoBackButton } from '../components/GoBackButton';
 import styled from 'styled-components';
 import { ContentPage } from '../components/bulletJournal/Pages';
+import { Journal } from '../components/bulletJournal/Journal';
+
 const BulletJournal = styled.div`
 	position: absolute;
 	top: 0;
@@ -49,9 +51,10 @@ const BlogView = () => {
 
 
 			</BulletJournal>}
+			<Journal />
 			{/* <Page leftPageOrRightPage='leftPage' dotted={false} /> */}
 			{/* <DottedPage leftPageOrRightPage='rightPage'></DottedPage> */}
-			<ContentPage leftPageOrRightPage='rightPage' />
+			{/* <ContentPage leftPageOrRightPage='rightPage' /> */}
 		</>
 	);
 }

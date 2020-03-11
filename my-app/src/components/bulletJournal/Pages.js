@@ -24,16 +24,16 @@ const PageSC = styled.div`
 			return 'linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%)';
 	}};
 
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	margin: auto auto;
+	margin: auto auto; */
 `;
 
 const DottedPageSC = styled(PageSC)`
-position: absolute;
+/* position: absolute; */
 display: grid;
 grid-template-columns: repeat(27, 1fr);
 grid-template-rows: repeat(39, 1fr);
@@ -56,7 +56,7 @@ const Dots = () => {
 
 
 const Page = props =>
-	<PageSC scale={0.8}>{props.children}</PageSC>;
+	<PageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>{props.children}</PageSC>;
 const DottedPage = props =>
 	<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
 		<Dots />

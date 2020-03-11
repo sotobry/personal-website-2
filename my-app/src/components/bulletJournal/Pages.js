@@ -57,7 +57,7 @@ const Page = props => {
 
 const Dots = () => {
 	let dotsArray;
-	for (dotsArray = []; dotsArray.length < (27 * 39); dotsArray = [...dotsArray, <DotSC />]) { }
+	for (dotsArray = []; dotsArray.length < (27 * 39); dotsArray = [...dotsArray, <DotSC key={dotsArray.length} />]) { }
 	return dotsArray;
 }
 const PageNum = styled.p`

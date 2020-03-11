@@ -48,13 +48,6 @@ grid-row: 0 -1;
 grid-column: 0 -1;
 `;
 
-const Dots = () => {
-	let dotsArray;
-	for (dotsArray = []; dotsArray.length < (27 * 39); dotsArray = [...dotsArray, <DotSC />]) { }
-	return dotsArray;
-}
-
-
 const Page = props => {
 	// const [side] = useState('left');
 	return (
@@ -62,11 +55,28 @@ const Page = props => {
 	);
 };
 
+const Dots = () => {
+	let dotsArray;
+	for (dotsArray = []; dotsArray.length < (27 * 39); dotsArray = [...dotsArray, <DotSC />]) { }
+	return dotsArray;
+}
+const PageNum = styled.p`
+	position: absolute;
+	left: ${({ side }) => {
+		return side === 'leftPage' ? 0 : 'init';
+	}};
+	right: 0;
+	bottom: 0;
+	color: #746060;
+	margin: 15px 32px;
+	font-family: 'Times New Roman';
+	font-size: 10px;
+`;
 const DottedPage = props => {
-	// const [pageNum] = useState(1);
 	return (
 		<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
 			<Dots />
+			<PageNum side={props.leftPageOrRightPage}>{props.pageNum}</PageNum>
 		</DottedPageSC>
 	);
 };
@@ -124,6 +134,7 @@ const ContentPageSC = styled(PageSC)`
 		color: #746060;
 	}
 `;
+
 const ContentPage = props => <ContentPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
 	<h1>Inhalt - Content - Contenu</h1>
 	<div className='contentTable'>

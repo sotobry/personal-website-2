@@ -7,6 +7,7 @@ const PageSC = styled.div`
 	background-color: #f7f8f3;
 	position: relative;
 	display: grid;
+	grid-template-rows: 1fr 10fr; 
 	padding: 20px 15px;
 
 	border-radius: ${ ({ leftPageOrRightPage }) => {
@@ -52,15 +53,113 @@ const Dots = () => {
 	for (dotsArray = []; dotsArray.length < (27 * 39); dotsArray = [...dotsArray, <DotSC />]) { }
 	return dotsArray;
 }
-const DottedPage = props =>
-	<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
-		<Dots />
-
-	</DottedPageSC>;
 
 
 const Page = props =>
 	<PageSC scale={0.8}>{props.children}</PageSC>;
+const DottedPage = props =>
+	<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
+		<Dots />
+	</DottedPageSC>;
+const ContentPageSC = styled(PageSC)`
+	color: #746060;
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	font-family: 'Times New Roman', Times, serif;
+	h1 {
+		/* background-color: red; */
+		font-size: 16px;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+	.contentTable {
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+		grid-template-rows: 2fr repeat(26, minmax(1fr, 1fr));
+		max-height: inherit;
+		margin: 0 35px 10px 35px;
+		
+		border-right: 1px solid rgba(116, 96, 96, 0.3);
+		border-bottom: 1px solid rgba(116, 96, 96, 0.3);
+	}
+	.contentTable div {
+		border-top: 1px solid rgba(116, 96, 96, 0.3);
+		border-left: 1px solid rgba(116, 96, 96, 0.3);
+		grid-row: 0 -1;
+		grid-column: 0 -1;
+		position: relative;
+	}
+	.contentTable p {
+		position: absolute;
+		color: blue;
+		font-size: 25px;
+		/* background-color: yellow; */
+		line-height: 0.8;
+		font-family: 'Meie Script';
+		overflow-x: visible;
+	}
+	.contentTable div:nth-of-type(even) p {
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: bold;
+	}
+	.contentTable .tableHeader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		font-family: 'Times New Roman';
+		color: #746060;
+	}
+`;
+const ContentPage = props => <ContentPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
+	<h1>Inhalt - Content - Contenu</h1>
+	<div className='contentTable'>
+		<div className='tableHeader'>Seiten<br />Pages</div>
+		<div className='tableHeader'>Thema - Topic - Sujet</div>
+		<div><p>2-3</p></div>
+		<div><p>Future Log</p></div>
+		<div><p>4-7</p></div>
+		<div><p>December</p></div>
+		<div><p>249</p></div>
+		<div><p>Possible collections</p></div>
+		<div><p>248</p></div>
+		<div><p>To-buy list</p></div>
+		<div><p>246-7</p></div>
+		<div><p>The Bullet Journal Method book notes</p></div>
+		<div><p>8-</p></div>
+		<div><p>Two Lives</p></div>
+		<div><p>18</p></div>
+		<div><p>Budget</p></div>
+		<div><p>20</p></div>
+		<div><p>Sbux Hrs</p></div>
+		<div><p>24</p></div>
+		<div><p>To-Read List</p></div>
+		<div><p>22-3</p></div>
+		<div><p>Hua's website</p></div>
+		<div><p>25</p></div>
+		<div><p>To-Learn List</p></div>
+		<div><p>28</p></div>
+		<div><p>Goals</p></div>
+
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+		<div></div><div></div>
+	</div>
+</ContentPageSC>;
 
 
-export { Page, DottedPage };
+export { Page, DottedPage, ContentPage };

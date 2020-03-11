@@ -1,8 +1,7 @@
 import React from 'react';
 import { GoBackButton } from '../components/GoBackButton';
-// import { LeftPaper, RightPaper } from '../components/BulletJournalPaper';
 import styled from 'styled-components';
-import { Page, DottedPage } from '../components/bulletJournal/Pages';
+import { ContentPage } from '../components/bulletJournal/Pages';
 const BulletJournal = styled.div`
 	position: absolute;
 	top: 0;
@@ -21,8 +20,9 @@ const BlogView = () => {
 	return (
 		<>
 			<GoBackButton />
-			{/* <BulletJournal>
-				<LeftPaper>
+			{<BulletJournal>
+
+				{/* <LeftPaper>
 					<p style={{ textAlign: 'right' }}>17:44 03/09/20</p>
 					<h1 style={{ fontFamily: 'Permanent Marker', fontSize: 16, textAlign: 'center', margin: '10px 0' }}>Notes on Dan Abramov's article about the difference b/w function and class components</h1>
 
@@ -45,9 +45,13 @@ const BlogView = () => {
 						<li>That works. However, this approach makes the code significantly more verbose and error-prone with time. What if we needed more than a single prop? What if we also needed to access the state? If showMessage calls another method, and that method reads this.props.something or this.state.something, we'll have the exact same problem again.</li>
 					</ul>
 				</RightPaper>
-			</BulletJournal> */}
+			 */}
+
+
+			</BulletJournal>}
 			{/* <Page leftPageOrRightPage='leftPage' dotted={false} /> */}
-			<DottedPage leftPageOrRightPage='rightPage'></DottedPage>
+			{/* <DottedPage leftPageOrRightPage='rightPage'></DottedPage> */}
+			<ContentPage leftPageOrRightPage='rightPage' />
 		</>
 	);
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const PageSC = styled.div`
@@ -55,12 +55,22 @@ const Dots = () => {
 }
 
 
-const Page = props =>
-	<PageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>{props.children}</PageSC>;
-const DottedPage = props =>
-	<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
-		<Dots />
-	</DottedPageSC>;
+const Page = props => {
+	// const [side] = useState('left');
+	return (
+		<PageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>{props.children}</PageSC>
+	);
+};
+
+const DottedPage = props => {
+	// const [pageNum] = useState(1);
+	return (
+		<DottedPageSC scale={0.8} leftPageOrRightPage={props.leftPageOrRightPage}>
+			<Dots />
+		</DottedPageSC>
+	);
+};
+
 const ContentPageSC = styled(PageSC)`
 	color: #746060;
 	display: grid;

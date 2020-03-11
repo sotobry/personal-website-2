@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Page, DottedPage, ContentPage } from './Pages';
 
@@ -16,12 +16,14 @@ const JournalSC = styled.div`
 `;
 
 const Journal = () => {
+	const [pages] = useState([<DottedPage leftPageOrRightPage='leftPage' />, <DottedPage leftPageOrRightPage='rightPage' />])
 	return (
 		<JournalSC>
 			{/* <Page leftPageOrRightPage='leftPage' /> */}
-			<DottedPage leftPageOrRightPage='leftPage' />
+			{/* <DottedPage leftPageOrRightPage='leftPage' /> */}
 			{/* <ContentPage leftPageOrRightPage='rightPage' /> */}
-			<DottedPage leftPageOrRightPage='rightPage' />
+			{/* <DottedPage leftPageOrRightPage='rightPage' /> */}
+			{pages}
 		</JournalSC>
 	);
 };

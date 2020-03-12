@@ -59,22 +59,22 @@ const journalData = [
 		id: 4,
 		leftSide: {
 			type: 'dotted',
-			pageNum: 3
+			pageNum: 4
 		},
 		rightSide: {
 			type: 'dotted',
-			pageNum: 4
+			pageNum: 5
 		}
 	},
 	{
 		id: 5,
 		leftSide: {
 			type: 'dotted',
-			pageNum: 5
+			pageNum: 6
 		},
 		rightSide: {
 			type: 'dotted',
-			pageNum: 6
+			pageNum: 7
 		}
 	}
 ];
@@ -119,6 +119,10 @@ const Journal = () => {
 		font-size: 100px;
 		color: white;
 		margin: 50px;
+		transition-duration: 250ms;
+		&:hover {
+			transform: scale(1.2);
+		}
 	`;
 	const LeftArrow = () =>
 		<ArrowSC className="fas fa-angle-left" onClick={turnPageToLeft} />;

@@ -15,15 +15,77 @@ const JournalSC = styled.div`
 	align-items: center;
 `;
 
+const journalData = [
+	{
+		id: 0,
+		leftSide: {
+			type: 'dotted',
+			pageNum: 2
+		},
+		rightSide: {
+			type: 'dotted',
+			pageNum: 3
+		}
+	},
+	{
+		id: 1,
+		leftSide: {
+			type: 'dotted',
+			pageNum: 3
+		},
+		rightSide: {
+			type: 'dotted',
+			pageNum: 4
+		}
+	},
+	{
+		id: 2,
+		leftSide: {
+			type: 'dotted',
+			pageNum: 5
+		},
+		rightSide: {
+			type: 'dotted',
+			pageNum: 6
+		}
+	}
+];
+
 const Journal = () => {
-	const [pages] = useState([<DottedPage side='left' pageNum={2} />, <DottedPage side='right' pageNum={3} />])
+	// const [pages] = useState([<DottedPage side='left' pageNum={2} />, <DottedPage side='right' pageNum={3} />])
+	const [pages, setPages] = useState(journalData[0]);
+	console.log(pages.leftSide);
+	const { leftSide, rightSide } = pages;
+
+	const turnPageToRight = () => {
+		setPages(prevPages => prevPages.id < journalData.length - 1 ?
+			journalData[prevPages.id + 1] :
+			prevPages);
+		console.log('turning right');
+	};
+
+	const turnPageToLeft = () => {
+		setPages(prevPages => prevPages.id > 0 ?
+			journalData[prevPages.id - 1] :
+			prevPages);
+		console.log('turning left');
+	};
+
+	let LeftPage, RightPage;
+	if (leftSide.type === 'dotted') LeftPage = () =>
+		<DottedPage side='left' pageNum={leftSide.pageNum} />;
+
+	if (rightSide.type === 'dotted') RightPage = () =>
+		<DottedPage side='right' pageNum={rightSide.pageNum} />;
+
 	return (
 		<JournalSC>
 			{/* <Page side='left' /> */}
-			{/* <DottedPage side='left' /> */}
 			{/* <ContentPage side='right' /> */}
-			{/* <DottedPage side='right' /> */}
-			{pages}
+			<button onClick={turnPageToLeft}>Left</button>
+			<LeftPage />
+			<RightPage />
+			<button onClick={turnPageToRight}>Right</button>
 		</JournalSC>
 	);
 };

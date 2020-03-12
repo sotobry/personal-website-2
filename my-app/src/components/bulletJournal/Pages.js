@@ -9,7 +9,6 @@ const PageSC = styled.div`
 	display: grid;
 	grid-template-rows: 1fr 10fr; 
 	padding: 20px 15px;
-
 	border-radius: ${ ({ side }) => {
 		if (side === 'left')
 			return '20px 0 0 20px';

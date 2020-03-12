@@ -19,6 +19,34 @@ const journalData = [
 	{
 		id: 0,
 		leftSide: {
+			type: 'blank',
+		},
+		rightSide: {
+			type: 'content'
+		}
+	},
+	{
+		id: 1,
+		leftSide: {
+			type: 'content',
+		},
+		rightSide: {
+			type: 'content',
+		}
+	},
+	{
+		id: 2,
+		leftSide: {
+			type: 'blank',
+		},
+		rightSide: {
+			type: 'dotted',
+			pageNum: 1
+		}
+	},
+	{
+		id: 3,
+		leftSide: {
 			type: 'dotted',
 			pageNum: 2
 		},
@@ -28,7 +56,7 @@ const journalData = [
 		}
 	},
 	{
-		id: 1,
+		id: 4,
 		leftSide: {
 			type: 'dotted',
 			pageNum: 3
@@ -39,7 +67,7 @@ const journalData = [
 		}
 	},
 	{
-		id: 2,
+		id: 5,
 		leftSide: {
 			type: 'dotted',
 			pageNum: 5
@@ -72,11 +100,22 @@ const Journal = () => {
 	};
 
 	let LeftPage, RightPage;
-	if (leftSide.type === 'dotted') LeftPage = () =>
+
+	if (leftSide.type === 'blank') LeftPage = () =>
+		<Page side='left' />;
+	else if (leftSide.type === 'content') LeftPage = () =>
+		<ContentPage side='left' />;
+	else if (leftSide.type === 'dotted') LeftPage = () =>
 		<DottedPage side='left' pageNum={leftSide.pageNum} />;
 
-	if (rightSide.type === 'dotted') RightPage = () =>
+
+	if (rightSide.type === 'blank') RightPage = () =>
+		<Page side='right' />;
+	if (rightSide.type === 'content') RightPage = () =>
+		<ContentPage side='right' />;
+	else if (rightSide.type === 'dotted') RightPage = () =>
 		<DottedPage side='right' pageNum={rightSide.pageNum} />;
+
 
 	return (
 		<JournalSC>

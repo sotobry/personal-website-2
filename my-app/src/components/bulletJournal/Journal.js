@@ -80,7 +80,6 @@ const journalData = [
 ];
 
 const Journal = () => {
-	// const [pages] = useState([<DottedPage side='left' pageNum={2} />, <DottedPage side='right' pageNum={3} />])
 	const [pages, setPages] = useState(journalData[0]);
 	console.log(pages.leftSide);
 	const { leftSide, rightSide } = pages;
@@ -116,15 +115,21 @@ const Journal = () => {
 	else if (rightSide.type === 'dotted') RightPage = () =>
 		<DottedPage side='right' pageNum={rightSide.pageNum} />;
 
-
+	const ArrowSC = styled.i`
+		font-size: 100px;
+		color: white;
+		margin: 50px;
+	`;
+	const LeftArrow = () =>
+		<ArrowSC className="fas fa-angle-left" onClick={turnPageToLeft} />;
+	const RightArrow = () =>
+		<ArrowSC className="fas fa-angle-right" onClick={turnPageToRight} />;
 	return (
 		<JournalSC>
-			{/* <Page side='left' /> */}
-			{/* <ContentPage side='right' /> */}
-			<button onClick={turnPageToLeft}>Left</button>
+			<LeftArrow />
 			<LeftPage />
 			<RightPage />
-			<button onClick={turnPageToRight}>Right</button>
+			<RightArrow />
 		</JournalSC>
 	);
 };

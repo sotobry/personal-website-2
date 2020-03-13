@@ -72,7 +72,7 @@ const PageNum = styled.p`
 	font-size: 10px;
 `;
 const Text = styled.div`
-position: absolute;
+	position: absolute;
 
 	font-size: 16px;
 	font-family: 'Meie Script';
@@ -92,6 +92,10 @@ position: absolute;
 	hyphens: auto;
 	text-shadow: #0000dd 0px 0.5px;
 	line-height: 1;
+
+	ul {
+		margin-left: 15px;
+	}
 `;
 
 const DottedPage = props => {

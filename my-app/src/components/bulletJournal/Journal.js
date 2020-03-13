@@ -22,16 +22,412 @@ const journalData = [
 			type: 'blank',
 		},
 		rightSide: {
-			type: 'content'
+			type: 'content',
+			data: [
+				{
+					startingPage: null,
+					pagesText: '2-3',
+					topic: 'Future Log'
+				},
+				{
+					startingPage: null,
+					pagesText: '4-7',
+					topic: 'December'
+				},
+				{
+					startingPage: null,
+					pagesText: '249',
+					topic: 'Possible collections'
+				},
+				{
+					startingPage: null,
+					pagesText: '248',
+					topic: 'To-buy list'
+				},
+				{
+					startingPage: null,
+					pagesText: '246-7',
+					topic: 'The Bullet Journal Method book notes'
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+			]
 		}
 	},
 	{
 		id: 1,
 		leftSide: {
 			type: 'content',
+			data: [
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+			]
 		},
 		rightSide: {
 			type: 'content',
+			data: [
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+				{
+					startingPage: null,
+					pagesText: '',
+					topic: ''
+				},
+			]
 		}
 	},
 	{
@@ -129,7 +525,7 @@ const Journal = () => {
 			</Page>;
 	else if (leftSide.type === 'content') LeftPage =
 		(props) =>
-			<ContentPage side='left'></ContentPage>;
+			<ContentPage side='left' data={leftSide.data}></ContentPage>;
 	else if (leftSide.type === 'dotted') LeftPage =
 		props =>
 			<DottedPage side='left' pageNum={leftSide.pageNum}>{leftSide.text}</DottedPage>;
@@ -138,7 +534,7 @@ const Journal = () => {
 	if (rightSide.type === 'blank') RightPage = () =>
 		<Page side='right' />;
 	if (rightSide.type === 'content') RightPage = () =>
-		<ContentPage side='right' />;
+		<ContentPage side='right' data={rightSide.data} />;
 	else if (rightSide.type === 'dotted') RightPage = () =>
 		<DottedPage side='right' pageNum={rightSide.pageNum}>{rightSide.text}</DottedPage>;
 

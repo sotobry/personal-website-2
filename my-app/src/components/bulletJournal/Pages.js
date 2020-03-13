@@ -157,51 +157,144 @@ const ContentPageSC = styled(PageSC)`
 		color: #746060;
 	}
 `;
-
-const ContentPage = props => <ContentPageSC scale={0.8} side={props.side}>
+const contentData = [
+	{
+		startingPage: null,
+		pagesText: '2-3',
+		topic: 'Future Log'
+	},
+	{
+		startingPage: null,
+		pagesText: '4-7',
+		topic: 'December'
+	},
+	{
+		startingPage: null,
+		pagesText: '249',
+		topic: 'Possible collections'
+	},
+	{
+		startingPage: null,
+		pagesText: '248',
+		topic: 'To-buy list'
+	},
+	{
+		startingPage: null,
+		pagesText: '246-7',
+		topic: 'The Bullet Journal Method book notes'
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+	{
+		startingPage: null,
+		pagesText: '',
+		topic: ''
+	},
+];
+const ContentPage = props => <ContentPageSC scale={0.8} side={props.side} data={props.data}>
 	<h1>Inhalt - Content - Contenu</h1>
 	<div className='contentTable'>
 		<div className='tableHeader'>Seiten<br />Pages</div>
 		<div className='tableHeader'>Thema - Topic - Sujet</div>
-		<div><p>2-3</p></div>
-		<div><p>Future Log</p></div>
-		<div><p>4-7</p></div>
-		<div><p>December</p></div>
-		<div><p>249</p></div>
-		<div><p>Possible collections</p></div>
-		<div><p>248</p></div>
-		<div><p>To-buy list</p></div>
-		<div><p>246-7</p></div>
-		<div><p>The Bullet Journal Method book notes</p></div>
-		<div><p>8-</p></div>
-		<div><p>Two Lives</p></div>
-		<div><p>18</p></div>
-		<div><p>Budget</p></div>
-		<div><p>20</p></div>
-		<div><p>Sbux Hrs</p></div>
-		<div><p>24</p></div>
-		<div><p>To-Read List</p></div>
-		<div><p>22-3</p></div>
-		<div><p>Hua's website</p></div>
-		<div><p>25</p></div>
-		<div><p>To-Learn List</p></div>
-		<div><p>28</p></div>
-		<div><p>Goals</p></div>
-
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
-		<div></div><div></div>
+		{props.data.map(({ pagesText, topic }) => <><div><p>{pagesText}</p></div><div><p>{topic}</p></div></>)}
 	</div>
 </ContentPageSC>;
 

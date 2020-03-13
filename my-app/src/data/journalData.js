@@ -9,29 +9,29 @@ const journalData = [
 			type: 'content',
 			data: [
 				{
-					startingPage: null,
-					pagesText: '2-3',
-					topic: 'Future Log'
+					startingPage: 2,
+					pagesText: '2-',
+					topic: 'Future Article Ideas'
+				},
+				{
+					startingPage: 4,
+					pagesText: '4-',
+					topic: 'Portfolio To-do List'
 				},
 				{
 					startingPage: null,
-					pagesText: '4-7',
-					topic: 'December'
+					pagesText: '',
+					topic: ''
 				},
 				{
 					startingPage: null,
-					pagesText: '249',
-					topic: 'Possible collections'
+					pagesText: '',
+					topic: ''
 				},
 				{
 					startingPage: null,
-					pagesText: '248',
-					topic: 'To-buy list'
-				},
-				{
-					startingPage: null,
-					pagesText: '246-7',
-					topic: 'The Bullet Journal Method book notes'
+					pagesText: '',
+					topic: ''
 				},
 				{
 					startingPage: null,
@@ -429,39 +429,58 @@ const journalData = [
 		leftSide: {
 			type: 'dotted',
 			pageNum: 2,
-			text: <><p style={{ textAlign: 'right' }}>17:44 03/09/20</p>
-				<h1 style={{ fontFamily: 'Permanent Marker', fontSize: 16, textAlign: 'center', margin: '10px 0' }}>Notes on Dan Abramov's article about the difference b/w function and class components</h1>
+			text: <><p style={{ textAlign: 'right' }}>15:16 03/13/20</p>
+				<h1 style={{ fontFamily: 'Permanent Marker', fontSize: 16, textAlign: 'center', margin: '10px 0' }}>Future Article and Blog Ideas</h1>
 
 				<ul>
-					<li>For a while, the canonical answer to this question has been that classes provide access to more features like state, but with Hooks, that's not true anymore.</li>
-					<li>Though most likely when recruiters ask this question, me saying that classes provide state will most likely be an acceptable answer given that rarely will they be up-to-date with the latest technologies, I should give then an actual technical correct answer so that they see that 1) I'm up-to-date with the latest features, and 2) some of them might be impressed.</li>
-					<li>Hooks are still new, and some 'best practices' haven't yet found their way into the tutorials</li>
-					<li>The biggest difference between them is that function components capture the rendered values.</li>
-					<li>It is common to think these two snippets of code are equivalent. People often freely refactor between these patterns without noticing their implications. However, these two snippets of code are subtly different.</li>
-					<li>Disclaimer: this difference has nothing to do with React Hooks.</li>
-					<li>This class method reads from this.props.user. Props are immutable in React so they can never change. Howerver, this is, and has always been, mutable. Indeed, that's the whole purpose of this in a class. React itself mutates it over time so that you can read the fresh version in the render and lifecycle methods. So if our component re-renders while the request is in flight, this.props will change, The showMessage method reads the user from the 'too new' props.</li>
-					<li>This exposes an interesting observation about the nature of user interfaces. If we say that a UI is conceptually a function of </li>
+					<li>Journal disclaimers.</li>
+					<li>CSS Flexbox Cheatsheet with the reasons behind the order of things.</li>
+					<li>CSS Grid Cheatsheet with the reasons behind the order of things.</li>
+					<li>How being self-taught has affected me as a person.</li>
+					<li>My future learning path.</li>
+					<li>My goal as a developer.</li>
+					<li>Overdraft fees should be illegal.</li>
+					<li>Comparison between HOCs, render props, and hooks.</li>
+					<li>My dream education system.</li>
+					<li>Portfolio to-do list.</li>
+					<li>Comparison between all the ways I can style a React app.</li>
 				</ul>
 			</>
 		},
 		rightSide: {
 			type: 'dotted',
 			pageNum: 3,
-			text: <>
-				<ul>
-					current application state, the event handlers are a part of the render result - just like the visual output. Our event handlers 'belong' to a particular render with particular props and state. Howerver, scheduling atimeout whose callback reads this.props breaks that association. Our showMessage callback is not 'tied' to any particular render, and so it 'loses' the correct props. Reading from this severed that connection.
-					<li>Let's say function components didn't exist. How would we solve this problem? We'd want to somehow 'repair' the connection between the render with the correct props and the showMessage callback that reads them. Somewhere along the way the props get lost.</li>
-					<li>One way to do it would be to read this.props early during the event, and then explicitly pass them through into the timeout completion handler.</li>
-					<li>That works. However, this approach makes the code significantly more verbose and error-prone with time. What if we needed more than a single prop? What if we also needed to access the state? If showMessage calls another method, and that method reads this.props.something or this.state.something, we'll have the exact same problem again.</li>
-				</ul>
-			</>
+			text: <></>
 		}
 	},
 	{
 		id: 4,
 		leftSide: {
 			type: 'dotted',
-			pageNum: 4
+			pageNum: 4,
+			text: <>
+				<p style={{ textAlign: 'right' }}>15:30 03/13/20</p>
+				<h1 style={{ fontFamily: 'Permanent Marker', fontSize: 16, textAlign: 'center', margin: '10px 0' }}>Portfolio To-do List</h1>
+				<ul>
+					<li>Implement the hardcover of the journal.</li>
+					<li>Animate pages to look like actually turning them. Maybe use the Turn.js library.</li>
+					<li>Make the items on the content page be clickable.</li>
+					<li>Deploy all your projects.</li>
+					<li>Display all your projects in the projects section.</li>
+					<li>Make it so that when you start writing on a dotted page, the vertical line automatically appears.</li>
+					<li>Make the design more perfect. Use a ruler and measure the dimensions of your journal.</li>
+					<li>Add the ability to change the text from cursive to normal text, and also to be the original page I have on my journal with my hand-writing.</li>
+					<li>Add the ability to read the journal in English or Spanish.</li>
+					<li>Make the portfolio responsive.</li>
+					<li>Implement the Newspaper section.</li>
+					<li>Make it so that nothing is shown until the whole application is fully loaded.</li>
+					<li>Maybe add the ability for the user to jump back to the content section.</li>
+					<li>Add the ability for you to highlight things here.</li>
+					<li>Add a closed journal for when the user turns the pages to the very beginning or end.</li>
+					<li>Maybe add different tags to for the different categories I choose to talk about.</li>
+					<li>Find a better way to display your education section.</li>
+					<li>Find a better image for the education section, maybe a better image of books.</li>
+				</ul></>
 		},
 		rightSide: {
 			type: 'dotted',

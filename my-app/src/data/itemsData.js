@@ -57,7 +57,7 @@ const deskItems = [
 	},
 	{
 		name: "journal",
-		hoverText: "Coming Soon",
+		hoverText: "Blog",
 		imgURL: journalURL,
 		destination: '#',
 		mainDimension: 5.75,

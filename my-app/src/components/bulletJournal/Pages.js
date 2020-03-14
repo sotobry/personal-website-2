@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PageSC = styled.div`
-	width: ${({ scale }) => scale * 5.75}in;
+	width: ${ ({ scale }) => scale * 5.75}in;
 	height: ${ ({ scale }) => scale * 8.25}in;
 	background-color: #f7f8f3;
 	position: relative;
@@ -25,7 +25,6 @@ const PageSC = styled.div`
 `;
 
 const DottedPageSC = styled(PageSC)`
-/* position: absolute; */
 display: grid;
 grid-template-columns: repeat(27, 1fr);
 grid-template-rows: repeat(39, 1fr);
@@ -88,9 +87,6 @@ const Text = styled.div`
 		margin-left: 15px;
 		list-style-position: outside;
 	}
-	ul li {
-
-	}
 `;
 
 const DottedPage = props => {
@@ -109,7 +105,6 @@ const ContentPageSC = styled(PageSC)`
 	grid-template-rows: min-content 1fr;
 	font-family: 'Times New Roman', Times, serif;
 	h1 {
-		/* background-color: red; */
 		font-size: 16px;
 		text-align: center;
 		margin-top: 30px;
@@ -137,7 +132,6 @@ const ContentPageSC = styled(PageSC)`
 		position: absolute;
 		color: blue;
 		font-size: 25px;
-		/* background-color: yellow; */
 		line-height: 0.8;
 		font-family: 'Meie Script';
 		overflow-x: visible;

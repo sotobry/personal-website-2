@@ -22,13 +22,6 @@ const PageSC = styled.div`
 		else if (side === 'right')
 			return 'linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%)';
 	}};
-
-	/* position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto auto; */
 `;
 
 const DottedPageSC = styled(PageSC)`
@@ -48,7 +41,6 @@ grid-column: 0 -1;
 `;
 
 const Page = props => {
-	// const [side] = useState('left');
 	return (
 		<PageSC scale={0.8} side={props.side}>{props.children}</PageSC>
 	);
@@ -76,7 +68,7 @@ const Text = styled.div`
 
 	font-size: 16px;
 	font-family: 'Meie Script';
-	padding: 20px 30px 25px 30px;
+	padding: 20px 10px 25px 10px;
 	height: 100%;
 	width: inherit;
 	height: inherit;
@@ -86,7 +78,6 @@ const Text = styled.div`
 	column-gap: 15px;
 	column-rule-style: solid;
 	column-rule-width: 2px;
-	/* column-rule-color: black; */
 
 	color: #0000d8;
 	hyphens: auto;
@@ -95,6 +86,10 @@ const Text = styled.div`
 
 	ul {
 		margin-left: 15px;
+		list-style-position: outside;
+	}
+	ul li {
+
 	}
 `;
 

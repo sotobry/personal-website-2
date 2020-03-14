@@ -486,17 +486,6 @@ const journalData = [
 			type: 'dotted',
 			pageNum: 5
 		}
-	},
-	{
-		id: 5,
-		leftSide: {
-			type: 'dotted',
-			pageNum: 6
-		},
-		rightSide: {
-			type: 'dotted',
-			pageNum: 7
-		}
 	}
 ];
 

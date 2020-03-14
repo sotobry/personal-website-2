@@ -1,0 +1,39 @@
+Pictures needed:
+	Resume
+	Latest Macbook Pro (Projects)
+	Books piled up (for education section)
+	iPhone 8 (Contact info)
+	Newspaper (Tech articles)
+	Journal	(Personal articles)
+
+	Sticky note (For what I'm learning at the moment)
+
+	Decoration:
+		Guava Chinese candy
+		Plant
+		Coffee
+		Coffee stain
+		Pen???
+		Passport
+
+The resume needs the filter: sepia(0.2).
+The desk objects stopped being scaled when hovered on.
+Fix the "Tech Articles" text to be on 2 lines, not 1.
+Fix the "Contact Me" text to be on 2 lines and centered.
+
+Possible blogs/articles:
+	Overdraft fees should be illegal.
+	Letter to a recruiter. (from what I wrote to Amy)
+	Advantages of being self-taught.
+	My plan of learning.
+	My priorities.
+	Why I chose the MERN stack over other stacks.
+	All the interview questions I've ever been asked about.
+	If God, all-knowing was a programmer, my goal is to become more and more like him.
+	Comparison between HOC, render prop, and hooks.
+	Comparison of the different ways you can use the Context API. this.contextType, static contextType, Consumer.
+	A better education system, online with labs distributed everywhere.
+	Better affordable housing.
+	Homeless population solution.
+
+Use the zoom.js library to zoom into the graph paper with a detailed description of the LAS Toyota project.
